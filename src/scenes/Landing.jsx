@@ -85,15 +85,17 @@ const Landing = ({ setSelectedPage }) => {
           >
             Contact Me
           </AnchorLink>
-          <AnchorLink
+          <a
+            href="/assets/Mouli-Tapadar-CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
-            onClick={() => setSelectedPage("contact")}
-            href="#contact"
-          >
+            >
             <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
-              Let's talk.
+            Open CV
             </div>
-          </AnchorLink>
+            </a>
+
         </motion.div>
 
         <motion.div
