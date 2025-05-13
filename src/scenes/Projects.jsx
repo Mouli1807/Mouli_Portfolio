@@ -29,7 +29,8 @@ const Project = ({ title }) => {
           porttitor accumsan tincidunt.
         </p>
       </div>
-      <img src={`../assets/${projectTitle}.png`} alt={projectTitle} />
+      <img src={`/assets/${projectTitle}.png`} alt={projectTitle} />
+
     </motion.div>
   );
 };
@@ -57,46 +58,28 @@ const Projects = () => {
             <LineGradient width="w-2/3" />
           </div>
         </div>
-        <p className="mt-10 mb-10">
-          Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-          fames odio in at. At magna ornare dictum lectus. Purus massa morbi
-          purus nec eget eleifend ut elit.
+        <p className="mt-10 mb-10 text-xl">
+        Below are some of my featured projects where I’ve applied my skills in frontend development, web design, and performance optimization. 
+        Every project represents a unique challenge that helped me grow as a developer.
         </p>
       </motion.div>
 
       {/* PROJECTS */}
-      <div className="flex justify-center">
+      <div className="flex justify-center px-4">
         <motion.div
-          className="sm:grid sm:grid-cols-3"
+          className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl"
           variants={container}
-          initial="hidden"
+          
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          {/* ROW 1 */}
-          <div
-            className="flex justify-center text-center items-center p-10 bg-red
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-          >
-            BEAUTIFUL USER INTERFACES
-          </div>
           <Project title="Project 1" />
           <Project title="Project 2" />
-
-          {/* ROW 2 */}
           <Project title="Project 3" />
-          <Project title="Project 4" />
+          {/* <Project title="Project 4" />
           <Project title="Project 5" />
-
-          {/* ROW 3 */}
           <Project title="Project 6" />
-          <Project title="Project 7" />
-          <div
-            className="flex justify-center text-center items-center p-10 bg-blue
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-          >
-            SMOOTH USER EXPERIENCE
-          </div>
+          <Project title="Project 7" /> */}
         </motion.div>
       </div>
     </section>
